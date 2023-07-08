@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: kazoto
+    password: 123qwe..A
+    url: jdbc:mysql://192.168.11.128:3306/visual?charset=utf8&autocommit=true&autoReconnect=true&serverTimezone=GMT%2B8
+
+#mybatis:
+#  mapper-locations: classpath:mapper/*Mapper.xml
+#  type-aliases-package: cn.edu.nyvc.springbootbackend.entity
+#  configuration:
+#    map-underscore-to-camel-case: true
