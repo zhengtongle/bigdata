@@ -1,6 +1,8 @@
-show databases;
+show
+databases;
 
-use visual;
+use
+visual;
 
 create table week
 (
@@ -288,6 +290,18 @@ INSERT INTO user_age_count (age, count)
 VALUES (0, 17019);
 INSERT INTO user_age_count (age, count)
 VALUES (18, 80595);
+
+create table conversion_rate
+(
+    pv          int,
+    fav         int,
+    cart        int,
+    `fav+cart`  int,
+    buy         int,
+    pv2favcart  float,
+    favcart2buy float,
+    pv2buy      float
+)
 
 create table male_ratio
 (

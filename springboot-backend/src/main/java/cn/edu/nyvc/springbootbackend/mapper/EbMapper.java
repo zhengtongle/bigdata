@@ -30,4 +30,7 @@ public interface EbMapper {
 
     @Select("select * from week")
     List<Week> selectWeek();
+
+    @Select("select * from conversion_rate")
+    ConversionRate selectConversionRate();
 }

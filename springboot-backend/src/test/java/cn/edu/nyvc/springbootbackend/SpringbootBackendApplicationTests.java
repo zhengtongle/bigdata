@@ -9,11 +9,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 class SpringbootBackendApplicationTests {
 
-	EbMapper  mapper;
-
 	@Test
 	void contextLoads() {
-		System.out.println(mapper.selectCustomerTypeCount());
 	}
 
 }
