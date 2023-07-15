@@ -19,6 +19,9 @@ public interface EbMapper {
     @Select("select * from day_pv")
     List<DayPv> selectDayPv();
 
+    @Select("select * from day_pv where date = #{date}")
+    DayPv selectDayPvByDay(DayPv dayPv);
+
     @Select("select male from male_ratio")
     String selectSexRatio();
 

@@ -5,6 +5,7 @@ import cn.edu.nyvc.springbootbackend.mapper.EbMapper;
 import lombok.AllArgsConstructor;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,6 +17,13 @@ import java.util.List;
 @AllArgsConstructor
 public class EbController {
     private EbMapper mapper;
+
+
+    @PostMapping("dayPv")
+    public DayPv getDayPv(DayPv pv) {
+        return mapper.selectDayPvByDay(pv);
+    }
+
 
     @GetMapping("conversion_rate")
     public ConversionRate getConversionRate() {
